@@ -4,7 +4,7 @@
 
 <%= search_form_for @q do |f| %>
     <%= f.label :name %>
-    <%= f.collection_select :name_eq, Person.all, :id, :name, {} %>
+   <%= f.collection_select :name_eq, Person.all, :name, :name, {}, style: 'width: 200px;' %>
     <%= f.submit %>
 <% end %>
 
